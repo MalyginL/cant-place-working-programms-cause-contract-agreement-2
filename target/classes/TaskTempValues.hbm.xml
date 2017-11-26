@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.rirt.mvcHtml5Angular.mvc.bean.TaskTempValues" table="TaskTempValues" schema="ComparatorBase">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="stable">
+            <column name="stable" sql-type="int(1) unsigned"/>
+        </property>
+        <property name="lacuna">
+            <column name="lacuna" sql-type="int(11)"/>
+        </property>
+        <property name="programTime">
+            <column name="programTime" sql-type="int(11) unsigned"/>
+        </property>
+    </class>
+</hibernate-mapping>

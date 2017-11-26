@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MVC_Html5_AngularJS project:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/MVC_Html5_AngularJS_project_war</output-path>
+    <root id="archive" name="MVC_Html5_AngularJS project_war.war">
+      <element id="artifact" artifact-name="MVC_Html5_AngularJS project:war exploded" />
+    </root>
+  </artifact>
+</component>

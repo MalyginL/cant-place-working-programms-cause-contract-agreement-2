@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.rirt.mvcHtml5Angular.mvc.bean.Config" table="Config" schema="ComparatorBase">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="version">
+            <column name="version" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="lastTaskId">
+            <column name="lastTaskID" sql-type="int(11) unsigned"/>
+        </property>
+    </class>
+</hibernate-mapping>

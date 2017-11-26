@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.rirt.mvcHtml5Angular.mvc.bean.UnstableDevices" table="Unstable_devices" schema="ComparatorBase">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="channel">
+            <column name="channel" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

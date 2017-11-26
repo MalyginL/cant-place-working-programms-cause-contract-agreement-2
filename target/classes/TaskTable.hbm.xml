@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.rirt.mvcHtml5Angular.mvc.bean.TaskTable" table="TaskTable" schema="ComparatorBase">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="tableName">
+            <column name="tableName" sql-type="varchar(40)" length="40"/>
+        </property>
+        <property name="channel">
+            <column name="channel" sql-type="int(1) unsigned"/>
+        </property>
+        <property name="commandName">
+            <column name="commandName" sql-type="varchar(60)" length="60"/>
+        </property>
+        <property name="startTime">
+            <column name="startTime" sql-type="int(11) unsigned"/>
+        </property>
+        <property name="finishTime">
+            <column name="finishTime" sql-type="int(11) unsigned"/>
+        </property>
+        <property name="status">
+            <column name="status" sql-type="int(2) unsigned"/>
+        </property>
+    </class>
+</hibernate-mapping>

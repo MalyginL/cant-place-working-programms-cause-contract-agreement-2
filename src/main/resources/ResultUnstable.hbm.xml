@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.rirt.mvcHtml5Angular.mvc.bean.ResultUnstable" table="ResultUnstable" schema="ComparatorBase">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="date">
+            <column name="date" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="channels">
+            <column name="channels" sql-type="varchar(10)" length="10"/>
+        </property>
+        <property name="result">
+            <column name="result" sql-type="varchar(50)" length="50"/>
+        </property>
+    </class>
+</hibernate-mapping>

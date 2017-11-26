@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.rirt.mvcHtml5Angular.mvc.bean.Etalon" table="Etalon" schema="ComparatorBase">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="channel">
+            <column name="channel" sql-type="int(1) unsigned"/>
+        </property>
+        <property name="date">
+            <column name="date" sql-type="int(11) unsigned"/>
+        </property>
+        <property name="phase">
+            <column name="phase" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="phaseDiff">
+            <column name="phase_diff" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="relFreqDiff">
+            <column name="rel_freq_diff" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="curVarRelFreqDiff">
+            <column name="cur_var_rel_freq_diff" sql-type="varchar(50)" length="50"/>
+        </property>
+    </class>
+</hibernate-mapping>

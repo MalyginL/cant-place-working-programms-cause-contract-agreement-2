@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.rirt.mvcHtml5Angular.mvc.bean.HistoryChannels" table="History_channels" schema="ComparatorBase">
+        <id name="id" column="id"/>
+        <property name="date" column="date"/>
+        <property name="channel" column="channel"/>
+        <property name="a" column="a"/>
+        <property name="b" column="b"/>
+        <property name="aBrak" column="a_brak"/>
+        <property name="bBrak" column="b_brak"/>
+        <property name="channelResult" column="channel_result"/>
+    </class>
+</hibernate-mapping>
